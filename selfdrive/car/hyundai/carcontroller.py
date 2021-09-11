@@ -200,6 +200,6 @@ class CarController():
 
     # 20 Hz LFA MFA message
     if frame % 5 == 0 and self.lfamfc:
-      can_sends.append(create_lfahda_mfc(self.packer, enabled, activated_hda))
+      can_sends.append(create_lfahda_mfc(self.packer, enabled))
 
     return can_sends
