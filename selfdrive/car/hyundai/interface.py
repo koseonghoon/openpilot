@@ -211,7 +211,7 @@ class CarInterface(CarInterfaceBase):
           ret.lateralTuning.indi.actuatorEffectivenessV = [2.3]
     # -----------------------------------------------------------------LQR
     elif Params().get("LateralControlSelect", encoding='utf8') == "2":
-      if candidate in [CAR.GENESIS, CAR.GENESIS_G70, CAR.GENESIS_G80, CAR.GENESIS_G90, CAR.IONIQ_EV]:
+      if candidate in [CAR.GENESIS, CAR.GENESIS_G70, CAR.GENESIS_G80, CAR.GENESIS_G90]:
           ret.lateralTuning.init('lqr')
           ret.lateralTuning.lqr.scale = 1900.
           ret.lateralTuning.lqr.ki = 0.01
