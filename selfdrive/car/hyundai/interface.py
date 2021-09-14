@@ -221,7 +221,7 @@ class CarInterface(CarInterfaceBase):
           ret.lateralTuning.lqr.c = [1., 0.]
           ret.lateralTuning.lqr.k = [-110., 451.]
           ret.lateralTuning.lqr.l = [0.33, 0.318]
-      elif candidate in [CAR.OPTIMA, CAR.OPTIMA_HEV, CAR.IONIQ_EV]:
+      elif candidate in [CAR.OPTIMA, CAR.OPTIMA_HEV]:
           ret.lateralTuning.init('lqr')
           ret.lateralTuning.lqr.scale = 1700.0
           ret.lateralTuning.lqr.ki = 0.016
@@ -231,7 +231,7 @@ class CarInterface(CarInterfaceBase):
           ret.lateralTuning.lqr.c = [1., 0.]
           ret.lateralTuning.lqr.k = [-110.0, 451.0]
           ret.lateralTuning.lqr.l = [0.33, 0.318]
-      elif candidate in [CAR.GRANDEUR, CAR.GRANDEUR_HEV, CAR.GRANDEUR20, CAR.GRANDEUR20_HEV, CAR.K7, CAR.K7_HEV]:
+      elif candidate in [CAR.GRANDEUR, CAR.GRANDEUR_HEV, CAR.GRANDEUR20, CAR.GRANDEUR20_HEV, CAR.K7, CAR.K7_HEV, CAR.IONIQ_EV]:
           ret.lateralTuning.init('lqr')
           ret.lateralTuning.lqr.scale = 1700.
           ret.lateralTuning.lqr.ki = 0.01
