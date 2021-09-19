@@ -233,7 +233,7 @@ class CarInterface(CarInterfaceBase):
           ret.lateralTuning.lqr.l = [0.323, 0.318]
       elif candidate in [CAR.GRANDEUR, CAR.GRANDEUR_HEV, CAR.GRANDEUR20, CAR.GRANDEUR20_HEV, CAR.K7, CAR.K7_HEV, CAR.IONIQ_EV]:
           ret.lateralTuning.init('lqr')
-          ret.lateralTuning.lqr.scale = 5000.
+          ret.lateralTuning.lqr.scale = 3500.
           ret.lateralTuning.lqr.ki = 0.001
           ret.lateralTuning.lqr.dcGain = 0.0023
           ret.lateralTuning.lqr.a = [0., 1., -0.22619643, 1.21822268]
@@ -279,7 +279,7 @@ class CarInterface(CarInterfaceBase):
     ret.longitudinalTuning.deadzoneV = [0., 0.015]
 
     # steer, gas, brake limitations VS speed
-    ret.steerActuatorDelay = 0.35 # Default delay
+    ret.steerActuatorDelay = 0.1 # Default delay
     ret.steerRateCost = 0.25
     ret.steerLimitTimer = 1.25
     ret.steerMaxBP = [0.]
