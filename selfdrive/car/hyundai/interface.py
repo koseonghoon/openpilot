@@ -279,7 +279,7 @@ class CarInterface(CarInterfaceBase):
     ret.longitudinalTuning.deadzoneV = [0., 0.015]
 
     # steer, gas, brake limitations VS speed
-    ret.steerActuatorDelay = 0.1 # Default delay
+    ret.steerActuatorDelay = 0.35 # Default delay
     ret.steerRateCost = 0.25
     ret.steerLimitTimer = 1.25
     ret.steerMaxBP = [0.]
